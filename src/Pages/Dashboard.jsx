@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Home from '../Components/Home'
-import Courses from '../Components/Courses'
+import Home from './Home'
+import Courses from './Courses'
 import HomeLogo from '../assets/images/Home.png'
 import Octalogic from '../assets/images/Octalogic.png'
 import CoursesLogo from '../assets/images/Courses.png'

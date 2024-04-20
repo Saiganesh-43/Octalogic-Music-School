@@ -1,133 +1,133 @@
 .LoginPage {
-    background: #E6FCED;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  background: #E6FCED;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .Instruction {
-    width: 80%;
-    margin: auto;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .Instruction h1 {
-    font-family: Nunito Sans;
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 122.76px;
-    letter-spacing: 0.0075em;
-    text-align: left;
-    color: #212529;
+  font-family: Nunito Sans;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 122.76px;
+  letter-spacing: 0.0075em;
+  text-align: left;
+  color: #212529;
 }
 
 .Instruction p {
-    font-family: Nunito Sans;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30.01px;
-    text-align: left;
-    color: #83858B;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.01px;
+  text-align: left;
+  color: #83858B;
 }
 
 
 .Login-Form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 350px; /* Increased width */
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
-    border-radius: 10px;
-    font-family: 'Nunito Sans', sans-serif; /* Ensures Nunito Sans for all */
-    animation: appear 0.5s ease-in-out forwards;
-  }
-  
-  @keyframes appear {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  .Login-Form h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 600; /* Slightly bolder h1 */
-  }
-  
-  .Login-Form input {
-    width: 100%;
-    padding: 10px 20px; /* Adjust padding for rounded corners */
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px; /* Rounder corners for inputs */
-    font-size: 16px;
-    font-family: 'Nunito Sans', sans-serif; /* Ensures Nunito Sans for inputs */
-    animation: input-grow 0.3s ease-in-out;
-  }
-  
-  @keyframes input-grow {
-    from { transform: scale(0.95); }
-    to { transform: scale(1); }
-  }
-  
-  .Login-Form input:focus {
-    outline: none;
-    border-color: #007bff;
-    animation: input-shine 0.5s ease-in-out forwards;
-  }
-  
-  @keyframes input-shine {
-    from { box-shadow: 0 0 0px #ddd; }
-    to { box-shadow: 0 0 5px #007bff; }
-  }
-  
-  .Login-Form button {
-    background-color: #007bff; /* Blue button */
-    color: white;
-    padding: 10px 40px; /* Wider button, slightly smaller height */
-    border: none;
-    border-radius: 50px; /* Rounder button with 50px radius */
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Nunito Sans', sans-serif; /* Ensures Nunito Sans for button */
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .Login-Form button:hover {
-    background-color: #3892d3; /* Darker shade on hover */
-  }
-  
-  .Login-Form .error-message {
-    color: red;
-    font-weight: bold;
-    margin-top: 10px;
-    animation: error-shake 0.3s ease-in-out alternate;
-  }
-  
-  @keyframes error-shake {
-    from { transform: translateX(0px); }
-    to { transform: translateX(5px); }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px; /* Increased width */
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+  border-radius: 10px;
+  font-family: 'Nunito Sans', sans-serif; /* Ensures Nunito Sans for all */
+  animation: appear 0.5s ease-in-out forwards;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.Login-Form h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600; /* Slightly bolder h1 */
+}
+
+.Login-Form input {
+  width: 100%;
+  padding: 10px 20px; /* Adjust padding for rounded corners */
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Rounder corners for inputs */
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif; /* Ensures Nunito Sans for inputs */
+  animation: input-grow 0.3s ease-in-out;
+}
+
+@keyframes input-grow {
+  from { transform: scale(0.95); }
+  to { transform: scale(1); }
+}
+
+.Login-Form input:focus {
+  outline: none;
+  border-color: #007bff;
+  animation: input-shine 0.5s ease-in-out forwards;
+}
+
+@keyframes input-shine {
+  from { box-shadow: 0 0 0px #ddd; }
+  to { box-shadow: 0 0 5px #007bff; }
+}
+
+.Login-Form button {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  padding: 10px 40px; /* Wider button, slightly smaller height */
+  border: none;
+  border-radius: 50px; /* Rounder button with 50px radius */
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif; /* Ensures Nunito Sans for button */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.Login-Form button:hover {
+  background-color: #3892d3; /* Darker shade on hover */
+}
+
+.Login-Form .error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: error-shake 0.3s ease-in-out alternate;
+}
+
+@keyframes error-shake {
+  from { transform: translateX(0px); }
+  to { transform: translateX(5px); }
+}
+
 
 .Author {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .Author p {
-    font-family: Nunito Sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19.1px;
-    text-align: left;
-    color: #83858B;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.1px;
+  text-align: left;
+  color: #83858B;
 }

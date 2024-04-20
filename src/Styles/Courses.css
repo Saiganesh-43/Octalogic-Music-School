@@ -11,11 +11,13 @@
     line-height: 38.19px;
     text-align: left;
     color: #83858B;
+    margin-bottom: 1.5rem;
 }
 
 .data-table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 1.5rem;
 }
 
 .data-table th,
@@ -107,21 +109,220 @@
     display: none;
 }
 
-/* Show options when the actions button is clicked */
+
 .actions-container:hover .options-container {
     display: flex;
     flex-direction: column;
 }
 
-/* Style for individual option */
+
 .option {
     padding: 6px 10px;
     cursor: pointer;
 }
+
 .actions-button {
     background: none;
     border: none;
-    cursor: pointer; /* Ensure the cursor changes to pointer on hover */
-  }
+    cursor: pointer;
+   
+}
+
+.Course-search-Bar {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Course-search-Bar h2 {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.82px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: left;
+    color: #83858B;
+}
+
+.Add-Course {
+    margin-top: 10rem;
+    width: 97%;
+    display: flex;
+    justify-content: end;
+}
+
+.Add-Course button {
+    width: 157px;
+    height: 56px;
+    top: 919px;
+    left: 1155px;
+    gap: 0px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: #FEC0CA;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.82px;
+    text-align: center;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    width:500px ;
+}
 
 
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 50%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-header {
+  margin-bottom: 20px;
+}
+
+.popup-header h2 {
+  margin: 0;
+}
+
+
+.search-container {
+    width: 223px;
+    height: 32px;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px;
+    opacity: 0px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container ::placeholder {
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.37px;
+    text-align: left;
+    color: #83858B
+}
+
+.search-container :focus {
+    outline: none;
+}
+
+.popup-content {
+    width: 495px;
+    height: 377px;
+    top: 790px;
+    left: 1294px;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-header h2 {
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30.01px;
+    text-align: center;
+    color: #000000;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.popup-content input {
+    width: 458px;
+    height: 32px;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid #E5E7EB;
+    margin-bottom: 10px;
+}
+
+.popup-content :focus {
+    outline: none;
+}
+
+.popup-content ::placeholder {
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.37px;
+    text-align: left;
+    color: #83858B;
+}
+
+.Form-Can-Add h2 {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.1px;
+    text-align: left;
+    color: #212529;
+}
+
+.Form-Can-Add button {
+    width: 106px;
+    height: 35px;
+    padding: 8px 16px 8px 16px;
+    gap: 8px;
+    border-radius: 4px;
+    opacity: 0px;
+    background-color: #FEC0CA;
+    white-space: nowrap;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.1px;
+    text-align: left;
+
+}

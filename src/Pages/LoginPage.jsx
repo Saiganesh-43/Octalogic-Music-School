@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+// import { Redirect } from 'react-router-dom';
 import '../Styles/LoginPage.css';
 import '@fontsource/nunito-sans';
-import Dashboard from '../Components/Dasdboard';
+import Dashboard from './Dashboard';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -9,11 +10,9 @@ const LoginPage = () => {
   const [loginError, setLoginError] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    const storedLoggedInStatus = localStorage.getItem('isLoggedIn');
-    if (storedLoggedInStatus === 'true') {
-      setIsLoggedIn(true);
-    }
+  // Reset isLoggedIn state when the component mounts
+  useState(() => {
+    setIsLoggedIn(false);
   }, []);
 
   const handleUsernameChange = (event) => {
@@ -27,19 +26,13 @@ const LoginPage = () => {
   const handleLogin = () => {
     if (username === 'Admin' && password === 'Octalogic_43') {
       setIsLoggedIn(true);
-      localStorage.setItem('isLoggedIn', 'true');
     } else {
       setLoginError('Invalid username or password');
     }
   };
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-    localStorage.removeItem('isLoggedIn');
-  };
-
   if (isLoggedIn) {
-    return <Dashboard handleLogout={handleLogout} />;
+    return <Dashboard />;
   }
 
   return (
