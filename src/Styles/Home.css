@@ -1,0 +1,150 @@
+.Home {
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.Home h1 {
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38.19px;
+    text-align: left;
+    color: #83858B;
+}
+
+.Overview-Cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 232px;
+    height: 98px;
+    background: #FFF;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.CardDetails {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.CardDetails-Text h3 {
+    color: #212529;
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30.01px;
+    text-align: left;
+}
+
+.CardDetails-Text p {
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.37px;
+    text-align: left;
+    color: #83858B
+}
+
+.View {
+    display: flex;
+    justify-content: end;
+    width: 93%;
+}
+
+.View h3 {
+    color: #B33086;
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12.28px;
+    text-align: left;
+}
+
+.Data-Table-Name {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Data-Table-Name h3 {
+    color: #83858B;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.82px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: left;
+}
+
+.Data-Table-Name h4 {
+    color: #901E75;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.1px;
+    text-align: left;
+}
+
+.Table-Content {
+    width: 100%;
+    background: #FFF;
+    border-radius: 6px;
+    padding: 14px;
+}
+
+.custom-table {
+    width: 96%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+
+.custom-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1.5px solid #ddd;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.1px;
+    /* text-align: left; */
+    color: #212529;
+}
+
+.custom-table th {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1.5px solid #ddd;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.1px;
+
+    color: #212529;
+
+}
+
+.custom-table th {
+    background-color: #ffffff;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}

@@ -1,0 +1,127 @@
+.Courses {
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.Courses h1 {
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38.19px;
+    text-align: left;
+    color: #83858B;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1.5px solid #ddd;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.1px;
+    /* text-align: left; */
+    color: #212529;
+}
+
+.data-table th {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1.5px solid #ddd;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.1px;
+    color: #212529;
+}
+
+.status-indicator.active {
+    background-color: #CFF9DF;
+    width: 66px;
+    height: 24px;
+    padding: 4px 16px 4px 16px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+}
+
+.status-indicator.closed {
+    background-color: #FEC0CA;
+    width: 70px;
+    height: 24px;
+    padding: 4px 16px 4px 16px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+
+}
+
+.status-indicator.archived {
+    background-color: #E5E7EB;
+    width: 80px;
+    height: 24px;
+    padding: 4px 16px 4px 16px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+
+}
+
+.actions-container {
+    position: relative;
+    display: inline-block;
+}
+
+.actions-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the three dots */
+.dots {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #83858B;
+    margin-bottom: 2px;
+}
+
+.options-container {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    background-color: #FFFFFF;
+    width: 167px;
+    height: 121px;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+/* Show options when the actions button is clicked */
+.actions-container:hover .options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for individual option */
+.option {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.actions-button {
+    background: none;
+    border: none;
+    cursor: pointer; /* Ensure the cursor changes to pointer on hover */
+  }
+
+
